@@ -1,0 +1,31 @@
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Test {
+ public static void main(String[] args) {
+  HashMap<String,String>Admin=new HashMap<String,String>();
+  Admin.put("appi", "1432");
+  Admin.put("gopi", "2341");
+  Admin.put("anil", "4132");
+  Admin.put("avinash", "2134");
+  Admin.put("akhil", "6589");
+  
+  Scanner sc = new Scanner(System.in);
+  System.out.print("Enter username:");
+  String name=sc.next().toUpperCase();
+ // Scanner sc2 = new Scanner(System.in);
+  //System.out.print("Enter password:");
+  //int key=sc2.nextInt();
+  
+  
+  
+  if(Admin.containsKey(name)) {
+   System.out.println("access granted");
+  }
+  else
+  {
+         System.out.println("access denied");
+
+  }
+ }
+}
